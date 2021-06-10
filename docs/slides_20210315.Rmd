@@ -1,0 +1,146 @@
+---
+title:  |
+        | FIMS 
+subtitle: "Planning Process"
+author: "Christine Stawitz"
+date: "2021/03/18 (updated:`r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "Page %current%"
+---
+
+layout: true
+  
+
+```{r xaringanthemer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+base_color="#00467F"
+style_mono_light(base_color=base_color,
+                 white_color="#FFFFFF",
+  header_font_google = google_font("Arimo"),
+  text_font_google   = google_font("Carlito", "300", "300i"),
+  code_font_google   = google_font("Source Code Pro"),
+  background_image = "static/slideswoosh.PNG",
+  background_size = "930px 690px",
+  title_slide_background_image = "static/slideswooshver.png",
+  title_slide_background_size = "930px 690px",
+  inverse_background_color = "#00467F",
+  black_color = base_color,
+  title_slide_background_color = base_color,
+  footnote_font_size = "0.6em",
+  footnote_position_bottom = "10px",
+  link_color = "#1ECAD3"
+  )
+```
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+# Software development lifecycle (SDLC)
+
+The SDLC provides an international standard that software companies can use to build and improve their computer programs. It offers a defined structure for development teams to follow in the design, creation and maintenance of high-quality software. The aim of the IT software development process is to build effective products within a defined budget and timeline.
+
+[Source](https://www.indeed.com/career-advice/career-development/what-is-software-development)
+
+---
+background-image: url(static/Three_software_development_patterns_mashed_together.svg)
+background-size: contain
+
+---
+# Requirements gathering
+The process of requirement gathering include identifying and documenting the necessary requirements of customers, users, stakeholders etc. related to the project. This knowledge will be used to develop solutions in the form of products, services, software etc.
+
+
+[Source](https://creately.com/blog/diagrams/requirements-gathering-techniques)
+
+---
+background-image: url(https://thedigitalprojectmanager.com/wp-content/uploads/2018/11/Requirements-Gathering-Process.png)
+background-size: contain
+
+
+---
+# Why do requirements gathering?
+- Requirements documentation serves as a point of reference to document the evolution of a project, its moving parts, and its implementation
+- Requirements documentation serves as a blueprint for the client to better understand what to expect out of the project (the what, where, when, and why of the project).
+
+
+
+[Source](https://thedigitalprojectmanager.com/requirements-gathering-guide/)
+
+---
+background-image: url(static/tree-swing-project-management-large.jpg)
+background-size: contain
+
+---
+# Functional vs non functional requirements
+- *functional requirements* what the system should do (e.g. estimate biomass)
+- *non functional requirements* how the system should do it (e.g. usability, performance)
+
+---
+background-image: url(static/RequirementsTemplate.PNG)
+background-size: contain
+# Requirements template
+[Spreadsheet](https://docs.google.com/spreadsheets/d/1KSuMwdK7C_kuFABmMhLyc9l7BaQjCznxU9C8R9cq7sA/edit#gid=0)
+
+
+---
+# How to do this in your centers
+- Meet with groups in your centers and document the requirements for their species/councils
+- Review documentation to be sure everything is explicitly captured
+
+
+---
+# What comes next?
+- Prioritizing and scoping the list of requirements
+- Goal is to define a *Minimum Viable Product (MVP)*
+- Implementation plan for phase 1 design and development is MVP
+- Requirements that are identified but not in phase 1 move to the next phase
+
+---
+background-image: url(static/Requirements.png)
+background-size: contain
+# timeline
+
+
+---
+# Github
+
+[Project](http://github.com/NOAA-FIMS/)
+
+---
+# Resources
+- [10 Tips for Successful Requirements Gathering](https://www.phase2technology.com/blog/successful-requirements-gathering)
+
+- [Modeling team engagement doc](https://docs.google.com/document/d/16Qq179D5sETaY3oE0AjmsUMoHx1LyRLUGPOWB6Em8Qo/edit#)
+
+- [How to set up a NOAA Github account](https://noaa-fisheries-integrated-toolbox.github.io/resources/onboarding/version-control/)
+
+---
+# Homework
+- add your Github handle to the [agenda](https://docs.google.com/document/d/1-V5YeL_5DWnI0fHVBgki9XGrdHMDaeUA2pQicg-nhkA/edit)
+- Fill out requirements [template](https://docs.google.com/spreadsheets/d/1KSuMwdK7C_kuFABmMhLyc9l7BaQjCznxU9C8R9cq7sA/edit#gid=0)
+- Come to the next meeting!
+
+---
+# Rough agenda for the next meeting
+- github troubleshoot
+- identify user personas
+- mind mapping exercise to group requirements
+
+---
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and [**xaringanthemer**](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).

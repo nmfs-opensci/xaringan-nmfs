@@ -6,7 +6,7 @@
 
 Open one of the template Rmd files in the `docs` folder and save. Then edit with your material. Click knit to make the presentation. Note, the css files need to be in the same folder as your Rmd file; as the repo is set up, this means the css needs to be in the `docs` folder.
 
-To host on GitHub, go to settings in your GH repo and turn on GitHub Pages (scroll to bottom). Select the main branch and docs folder and click save. Save the url that it tells you. The url to your slideshow will be something like `yourname.github.io/xaringan-nmfs/docs/slides.html`.
+To host on GitHub, go to settings in your GH repo and turn on GitHub Pages (scroll to bottom). Select the main branch, root folder, and click save. Save the url that it tells you. The url to your slideshow will be something like `yourname.github.io/xaringan-nmfs/docs/slides.html`. Alternatively, you could select the `docs` folder and the url would be `yourname.github.io/xaringan-nmfs/slides.html` but you'd need to add a README.md to `docs` if you want `yourname.github.io/xaringan-nmfs` to be something otherthan a dummy page (which GitHub Pages makes for you).
 
 ### `template.Rmd`. 
 

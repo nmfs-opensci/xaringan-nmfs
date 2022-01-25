@@ -266,3 +266,29 @@ div.my-footer a {
   font-size: 0.70rem;
   font-family: Raleway;
 }
+
+/* figures fill up the whole slide */
+.full {
+  padding: 2%;
+}
+
+.full p {
+  margin: 0px;
+}
+
+/* flex columns */
+.flexcolumn {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flexcolumn ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

@@ -27,6 +27,10 @@ layout: true
 options(htmltools.dir.version = FALSE)
 ```
 
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
 ---
 
 # Notes
@@ -37,8 +41,28 @@ The template and css makes a presentation that has a few tweaks in `slides-style
 * `slides-style.css` has a number of extra customizations such as square for the bullets, some colored boxes, and a wide left column class.
 * Instead of page numbers, there is a progress bar across the top.
 * You may want to futz with the css for the title at the top of `slides-style.css`
+* To add a Table of Contents, I wrote a helper function `render_toc.R` and add `name:` and `text:` to each slide. `name` should have no spaces. `text` is what you want to show for the TOC. If you leave off `text:`, it will use `name`. If you leave off `name`, the slide won't appear int he TOC.
+* I am using `https://github.com/gadenbuie/xaringanExtra` to have the tile navigation.
 
 ---
+
+```{r setup-toc, include=FALSE} 
+knitr::opts_chunk$set(echo = TRUE)
+source('assets/render_toc.R')
+```
+
+## Table of Contents
+
+At any time, you can press "O" (capital O) and see tiles of the slides that you can jump between.
+
+```{r toc, echo=FALSE, class="flexcolumn"} 
+render_toc("template-extra.Rmd")
+```
+
+
+---
+name: sidenotes
+text: Side notes
 
 ## Side notes
 
@@ -58,8 +82,11 @@ You can add black sidenotes.
 ]
 
 ---
+name: sidemargins
+text: Side margins
 
 ## Side margin
+
 
 
 .pull-left-wide[
@@ -82,6 +109,8 @@ plot(1:10)
 ]
 
 ---
+name: Footnotes
+
 
 # Footnotes
 
@@ -102,6 +131,7 @@ r <- 2 + 2
 
 
 ---
+name: Boxes
 
 # Boxes
 
@@ -121,6 +151,9 @@ A note.
 ]
 
 ---
+name: boxside
+text: Boxes with side note
+
 
 # Boxes and side notes
 
@@ -144,12 +177,18 @@ You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it s
 
 
 ---
+name: plaintitle
+text: Plain title slide
+
 
 class: middle
 
 # A slide with just a title
 
 ---
+name: twocolumn
+text: Two columns
+
 
 ## Two column format
 
@@ -165,6 +204,9 @@ class: middle
 ]
 
 ---
+name: threecolumn
+text: Three columns
+
 
 ## Three column format
 
@@ -198,3 +240,24 @@ Column 3
 &#127881;    [rverse](http://rverse-tutorials.github.io)
 
 ]
+
+
+---
+name: full
+text: Plot fills the slide
+
+
+class: full
+background-image: url("")
+background-color: white
+
+```{r, fig.asp = 3/4, fig.align = 'center', echo = FALSE, out.width = "96%", dpi= 300, warning = FALSE}
+library(ggplot2)
+
+ggplot(mtcars) +
+  aes(mpg, hp,
+      color = cyl) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = "mpg vs hp")
+```

@@ -8,6 +8,8 @@ Open one of the template Rmd files in the `docs` folder and save. Then edit with
 
 To host on GitHub, go to settings in your GH repo and turn on GitHub Pages (scroll to bottom). Select the main branch, root folder, and click save. Save the url that it tells you. The url to your slideshow will be something like `yourname.github.io/xaringan-nmfs/docs/slides.html`. Alternatively, you could select the `docs` folder and the url would be `yourname.github.io/xaringan-nmfs/slides.html` but you'd need to add a README.md to `docs` if you want `yourname.github.io/xaringan-nmfs` to be something otherthan a dummy page (which GitHub Pages makes for you).
 
+**packages:** {xaringan}, {xaringanthemes}, [{xaringanExtra}](devtools::install_github("gadenbuie/xaringanExtra"))
+
 ### `template.Rmd`. 
 
 This is a basic presentation. [Slides](docs/template.html)

@@ -26,6 +26,11 @@ layout: true
 options(htmltools.dir.version = FALSE)
 ```
 
+```{r xaringan-tile-view, echo=FALSE}
+# this gives you a tile navigation if you type "O" at any time
+xaringanExtra::use_tile_view()
+```
+
 ---
 
 # Notes

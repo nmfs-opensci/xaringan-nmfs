@@ -4,6 +4,7 @@ subtitle: "Some extra css for side notes and boxes"
 author: "Eli Holmes<br>NOAA Fisheries, NWFSC<br>`r Sys.Date()`"
 output:
   xaringan::moon_reader:
+    self_contained: true
     css: ["xaringan-themer.css", "slides-style.css"]
     lib_dir: libs
     nature:

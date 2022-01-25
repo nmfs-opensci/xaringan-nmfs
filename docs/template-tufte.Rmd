@@ -34,6 +34,7 @@ The template and css makes a presentation that is vaguely like a Tufte handout i
 
 * I have tweaked the title slide css in `slides-style.css` and needed to remove `date:` from the yaml.
 * `slides-style.css` has a number of extra customizations such as square for the bullets, some colored boxes, and a wide left column class.
+* I couldn't get `self_contained: true` to work for this one so you cannot make a self-contained html file.
 
 ---
 

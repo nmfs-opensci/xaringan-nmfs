@@ -1,8 +1,12 @@
 :spiral_calendar: January 25, 2022 
 
-# xaringan templates
+# xaringan NMFS templates
 
-NMFS templates to use for xaringan presentations. To use, open one of the template Rmd files in the `docs` folder and save. Then edit with your material. Note, the css files need to be in the same folder as your Rmd file.
+### To use
+
+Open one of the template Rmd files in the `docs` folder and save. Then edit with your material. Click knit to make the presentation.
+
+Note, the css files need to be in the same folder as your Rmd file.
 
 ### `template.Rmd`. 
 

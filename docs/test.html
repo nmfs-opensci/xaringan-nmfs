@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>slides_20210315.utf8</title>
+    <title>Here is a title</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Christine Stawitz" />
+    <meta name="author" content="Eli Holmes NOAA Fisheries, NWFSC Seattle, WA" />
+    <meta name="date" content="2022-01-24" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="slides-style.css" type="text/css" />
+    <link rel="stylesheet" href="tufte.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# <div class="line-block">FIMS</div>
-## Planning Process
-### Christine Stawitz
-### 2021/03/18 (updated:2021-03-30)
+# Here is a title
+## subtitle
+### Eli Holmes<br>NOAA Fisheries, NWFSC<br>Seattle, WA
+### 2022-01-24
 
 ---
 
@@ -23,118 +26,118 @@ layout: true
   
 
 
-
 .footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
 
 
 
 
 ---
-# Software development lifecycle (SDLC)
 
-The SDLC provides an international standard that software companies can use to build and improve their computer programs. It offers a defined structure for development teams to follow in the design, creation and maintenance of high-quality software. The aim of the IT software development process is to build effective products within a defined budget and timeline.
+## Visualising multiple variables
 
-[Source](https://www.indeed.com/career-advice/career-development/what-is-software-development)
+### Base R
 
----
-background-image: url(static/Three_software_development_patterns_mashed_together.svg)
-background-size: contain
-
----
-# Requirements gathering
-The process of requirement gathering include identifying and documenting the necessary requirements of customers, users, stakeholders etc. related to the project. This knowledge will be used to develop solutions in the form of products, services, software etc.
-
-
-[Source](https://creately.com/blog/diagrams/requirements-gathering-techniques)
-
----
-background-image: url(https://thedigitalprojectmanager.com/wp-content/uploads/2018/11/Requirements-Gathering-Process.png)
-background-size: contain
-
-
----
-# Why do requirements gathering?
-- Requirements documentation serves as a point of reference to document the evolution of a project, its moving parts, and its implementation
-- Requirements documentation serves as a blueprint for the client to better understand what to expect out of the project (the what, where, when, and why of the project).
-
-
-
-[Source](https://thedigitalprojectmanager.com/requirements-gathering-guide/)
+.pull-left-wide[
+1. Teach statistical thinking.  
+  - Teach statistics as an investigative process of problem-solving and decision making.
+  - Give students experience with multivariable thinking [...] to answer challenging questions that require them to investigate and explore relationships among many variables.
+1. Focus on conceptual understanding. 
+1. Integrate real data with a context and purpose.
+1. Foster active learning.
+1. **Use technology** to explore concepts and analyse data.
+1. Use assessments to improve and evaluate student learning.
+]
+.pull-right-narrow[
+.hand-blue[
+NOT use technology that is only applicable in the intro course or that doesn’t follow good science principles
+]
+]
 
 ---
-background-image: url(static/tree-swing-project-management-large.jpg)
-background-size: contain
+
+## Visualising multiple variables
+
+### Base R
+
+.pull-left-wide[
+1. Teach statistical thinking.  
+  - Teach statistics as an investigative process of problem-solving and decision making.
+  - Give students experience with multivariable thinking [...] to answer challenging questions that require them to investigate and explore relationships among many variables.
+1. Focus on conceptual understanding. 
+1. Integrate real data with a context and purpose.
+1. Foster active learning.
+1. **Use technology** to explore concepts and analyse data.
+1. Use assessments to improve and evaluate student learning.
+]
+.pull-right-narrow[
+.hand-blue[
+
+```r
+plot(1:10)
+```
+
+![](test_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+]
+]
 
 ---
-# Functional vs non functional requirements
-- *functional requirements* what the system should do (e.g. estimate biomass)
-- *non functional requirements* how the system should do it (e.g. usability, performance)
+
+# test
+
+
+- some content
+- a [link](http://www.google.com)
+
+
+
+```r
+r &lt;- 2 + 2
+```
+
+
+.footnote[test a footnote
+
+
+]
 
 ---
-background-image: url(static/RequirementsTemplate.PNG)
-background-size: contain
-# Requirements template
-[Spreadsheet](https://docs.google.com/spreadsheets/d/1KSuMwdK7C_kuFABmMhLyc9l7BaQjCznxU9C8R9cq7sA/edit#gid=0)
 
-
----
-# How to do this in your centers
-- Meet with groups in your centers and document the requirements for their species/councils
-- Review documentation to be sure everything is explicitly captured
-
+.discussion[
+- What are other arguments for starting to teach R with the tidyverse?
+- Any arguments against it?
+]
 
 ---
-# What comes next?
-- Prioritizing and scoping the list of requirements
-- Goal is to define a *Minimum Viable Product (MVP)*
-- Implementation plan for phase 1 design and development is MVP
-- Requirements that are identified but not in phase 1 move to the next phase
+
+class: middle
+
+# How tidyverse?
 
 ---
-background-image: url(static/Requirements.png)
-background-size: contain
-# timeline
 
+### .pink[  ]
 
----
-# Github
+## ggplot2 `\(\in\)` tidyverse
 
-[Project](http://github.com/NOAA-FIMS/)
-
----
-# Resources
-- [10 Tips for Successful Requirements Gathering](https://www.phase2technology.com/blog/successful-requirements-gathering)
-
-- [Modeling team engagement doc](https://docs.google.com/document/d/16Qq179D5sETaY3oE0AjmsUMoHx1LyRLUGPOWB6Em8Qo/edit#)
-
-- [How to set up a NOAA Github account](https://noaa-fisheries-integrated-toolbox.github.io/resources/onboarding/version-control/)
-
----
-# Homework
-- add your Github handle to the [agenda](https://docs.google.com/document/d/1-V5YeL_5DWnI0fHVBgki9XGrdHMDaeUA2pQicg-nhkA/edit)
-- Fill out requirements [template](https://docs.google.com/spreadsheets/d/1KSuMwdK7C_kuFABmMhLyc9l7BaQjCznxU9C8R9cq7sA/edit#gid=0)
-- Come to the next meeting!
-
----
-# Rough agenda for the next meeting
-- github troubleshoot
-- identify user personas
-- mind mapping exercise to group requirements
-
----
-# Thanks!
-
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and [**xaringanthemer**](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html).
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+.pull-left[
+- **ggplot2** is tidyverse's data visualization package
+- The `gg` in "ggplot2" stands for Grammar of Graphics
+- It is inspired by the book **Grammar of Graphics** by Leland Wilkinson
+]
+.pull-right[
+- **ggplot2** is tidyverse's data visualization package
+- The `gg` in "ggplot2" stands for Grammar of Graphics
+- It is inspired by the book **Grammar of Graphics** by Leland Wilkinson
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"ratio": "4:3",
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
-"slideNumberFormat": "Page %current%"
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc( (%current% - 1) / (%total% - 1) * 100%);\">\n  </div>\n</div>`"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

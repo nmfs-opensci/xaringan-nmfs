@@ -6,3 +6,5 @@
 *.scm#*
 .#*.scm
 .Rproj.user
+
+.DS_Store

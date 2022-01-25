@@ -1,6 +1,6 @@
 # xaringan templates
 
-NMFS templates to use for xaringan presentations. To use, open one of the template Rmd files and save. Then edit with your material.
+NMFS templates to use for xaringan presentations. To use, open one of the template Rmd files in the `docs` folder and save. Then edit with your material. Note, the css files need to be in the same folder as your Rmd file.
 
 ### `template.Rmd`. 
 

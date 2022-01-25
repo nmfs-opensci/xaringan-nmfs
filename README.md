@@ -1,3 +1,5 @@
+:spiral_calendar: January 25, 2022 
+
 # xaringan templates
 
 NMFS templates to use for xaringan presentations. To use, open one of the template Rmd files in the `docs` folder and save. Then edit with your material. Note, the css files need to be in the same folder as your Rmd file.
@@ -9,6 +11,16 @@ This is a basic presentation. [Slides](docs/template.html)
 * The css used is at the top
 * `slideNumberFormat:` specifies how to show the slide number
 * See the slides for examples of different slide formats
+
+### `template-extra.Rmd`. 
+
+This has a variety of extra bells and whistles. [Slides](docs/template-extra.html)
+
+* A progress bar at top
+* A right side bar
+* Special formating of sidebar text
+* Boxes with text
+* 3 and 4 column formats
 
 ### `template-tufte.Rmd`. 
 

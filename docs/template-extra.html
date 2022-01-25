@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Template - Tufte style</title>
+    <title>Template - Extra</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Eli Holmes NOAA Fisheries, NWFSC Seattle, WA 2022-01-25" />
+    <meta name="author" content="Eli Holmes NOAA Fisheries, NWFSC 2022-01-25" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="slides-style.css" type="text/css" />
-    <link rel="stylesheet" href="tufte.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Template - Tufte style
-## Tufte fonts and line spacings
-### Eli Holmes<br>NOAA Fisheries, NWFSC<br>Seattle, WA<br>2022-01-25
+# Template - Extra
+## Some extra css for side notes and boxes
+### Eli Holmes<br>NOAA Fisheries, NWFSC<br>2022-01-25
 
 ---
 
@@ -30,33 +29,34 @@ layout: true
 
 # Notes
 
+The template and css makes a presentation that has a few tweaks in `slides-style.css`.  `slide-style.css` is adapted from An RStudio workshop on data science [design-ds-classroom](https://github.com/rstudio-conf-2020/design-ds-classroom) by [Mine Cetinkaya-Rundel](https://github.com/mine-cetinkaya-rundel). 
+
 * I have tweaked the title slide css in `slides-style.css` and needed to remove `date:` from the yaml.
 * `slides-style.css` has a number of extra customizations such as square for the bullets, some colored boxes, and a wide left column class.
+* Instead of page numbers, there is a progress bar across the top.
 
 ---
 
-## Tufte style
+## Side notes
 
-### Changes
 
 .pull-left-wide[
-1. The Tufte style is best known for sidenotes `\(^1\)` but also has a number of other features.  
-  - Tufte font
-  - Specific size ratios for text to headers
-  - Different line spacing
-1. The Tufte style is specified in the `tufte.css`
+1. This has side notes in a 'hand' font.
+1. There is black and blue versions.
 ]
 .pull-right-narrow[
 .hand-blue[
 You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it smaller and blue.
+]
 
-`\(^1\)` In order to add a sidenote with number, you'll have to do that manually.
+.hand[
+You can add black sidenotes.
 ]
 ]
 
 ---
 
-## You can put anything in the side margin
+## Side margin
 
 
 .pull-left-wide[
@@ -75,7 +75,7 @@ Everything will get scaled to fit.
 plot(1:10)
 ```
 
-![](template-tufte_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+![](template-extra_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
 
 ![](static/slideswooshver.png)
 ]
@@ -104,7 +104,7 @@ r &lt;- 2 + 2
 
 ---
 
-# `slides-style.css` has boxes
+# Boxes
 
 .bluebox[## Blue box
 - The ## header will appear at the top in grey
@@ -112,7 +112,7 @@ r &lt;- 2 + 2
 ]
 
 .orangebox[## Orange box
-&lt;img src="template-tufte_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="template-extra_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
 ]
 
 .yellowbox[## Yellow box
@@ -125,7 +125,7 @@ A note.
 
 .pull-left-wide[
 .orangebox[## Orange box
-&lt;img src="template-tufte_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="template-extra_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
 ]
 ]
 
@@ -134,7 +134,7 @@ A note.
 You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it smaller and blue.
 ]
 
-.small[`.small` also works but the text is not itallic or blue. Note you need a linefeed in the sidenote code.
+.small[`.small` also works but the text is different. You can change this in the css. Note you need a linefeed in the side note code.
 ]
 
 .small[If you leave off the line-feed, then it will use a span element and won't pick up the right line-height spacing.]]

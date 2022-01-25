@@ -1,10 +1,10 @@
 ---
-title:  "Template - Tufte style"
-subtitle: "Tufte fonts and line spacings"
-author: "Eli Holmes<br>NOAA Fisheries, NWFSC<br>Seattle, WA<br>`r Sys.Date()`"
+title:  "Template - Extra"
+subtitle: "Some extra css for side notes and boxes"
+author: "Eli Holmes<br>NOAA Fisheries, NWFSC<br>`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["xaringan-themer.css", "slides-style.css", "tufte.css"]
+    css: ["xaringan-themer.css", "slides-style.css"]
     lib_dir: libs
     nature:
       ratio: '4:3'
@@ -30,35 +30,35 @@ options(htmltools.dir.version = FALSE)
 
 # Notes
 
-The template and css makes a presentation that is vaguely like a Tufte handout in that it has Tufte font and you can have side notes.
+The template and css makes a presentation that has a few tweaks in `slides-style.css`.  `slide-style.css` is adapted from An RStudio workshop on data science [design-ds-classroom](https://github.com/rstudio-conf-2020/design-ds-classroom) by [Mine Cetinkaya-Rundel](https://github.com/mine-cetinkaya-rundel). 
 
 * I have tweaked the title slide css in `slides-style.css` and needed to remove `date:` from the yaml.
 * `slides-style.css` has a number of extra customizations such as square for the bullets, some colored boxes, and a wide left column class.
+* Instead of page numbers, there is a progress bar across the top.
+* You may want to futz with the css for the title at the top of `slides-style.css`
 
 ---
 
-## Tufte style
+## Side notes
 
-### Changes
 
 .pull-left-wide[
-1. The Tufte style is best known for sidenotes $^1$ but also has a number of other features.  
-  - Tufte font
-  - Specific size ratios for text to headers
-  - Different line spacing
-1. The Tufte style is specified in the `tufte.css`
+1. This has side notes in a 'hand' font.
+1. There is black and blue versions.
 ]
 .pull-right-narrow[
 .hand-blue[
 You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it smaller and blue.
+]
 
-$^1$ In order to add a sidenote with number, you'll have to do that manually.
+.hand[
+You can add black sidenotes.
 ]
 ]
 
 ---
 
-## You can put anything in the side margin
+## Side margin
 
 
 .pull-left-wide[
@@ -102,7 +102,7 @@ r <- 2 + 2
 
 ---
 
-# `slides-style.css` has boxes
+# Boxes
 
 .bluebox[## Blue box
 - The ## header will appear at the top in grey
@@ -136,7 +136,7 @@ plot(1:100)
 You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it smaller and blue.
 ]
 
-.small[`.small` also works but the text is not itallic or blue. Note you need a linefeed in the sidenote code.
+.small[`.small` also works but the text is different. You can change this in the css. Note you need a linefeed in the side note code.
 ]
 
 .small[If you leave off the line-feed, then it will use a span element and won't pick up the right line-height spacing.]]

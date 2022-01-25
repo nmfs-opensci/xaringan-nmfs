@@ -1,0 +1,117 @@
+---
+title:  "Template"
+subtitle: "Basic style without tweaks of the css"
+author: "Eli Holmes<br>NOAA Fisheries, NWFSC"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    lib_dir: libs
+    nature:
+      ratio: '4:3'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "Page %current%"
+---
+layout: true
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+
+# Notes
+
+The template and css makes a presentation that has a few tweaks in `slides-style.css`.  `slide-style.css` is adapted from An RStudio workshop on data science [design-ds-classroom](https://github.com/rstudio-conf-2020/design-ds-classroom) by [Mine Cetinkaya-Rundel](https://github.com/mine-cetinkaya-rundel). 
+
+* I have tweaked the title slide css in `slides-style.css` and needed to remove `date:` from the yaml.
+* `slides-style.css` has a number of extra customizations such as square for the bullets, some colored boxes, and a wide left column class.
+* Instead of page numbers, there is a progress bar across the top.
+* You may want to futz with the css for the title at the top of `slides-style.css`
+
+
+---
+
+## Side margin
+
+
+.left-column[
+The side margin is smaller on the left.
+
+- Figures
+- References
+- Images
+
+Everything will get scaled to fit.
+]
+.right-column[
+.hand-blue[
+```{r fig.height=4}
+plot(1:10)
+```
+
+
+]
+]
+
+---
+
+# Footnotes
+
+Because the NMFS footnote is already occupying the footnote space, you need to add some linefeeds to move the footnote upward. 
+
+
+
+
+.footnote[It is quite finicky. Add a linefeed and it breaks.<br><br>]
+
+
+---
+
+# Math
+
+Weirdly it doesn't know `\begin{equation}`. You have to use `$$` bracketing.
+
+$$
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+ & = \frac{1}{2} \pi r^2
+\end{split}
+$$
+
+---
+
+class: middle
+
+# A slide with just a title
+
+---
+
+## Two column format
+
+.pull-left[
+- **ggplot2** is tidyverse's data visualization package
+- The `gg` in "ggplot2" stands for Grammar of Graphics
+- It is inspired by the book **Grammar of Graphics** by Leland Wilkinson
+]
+.pull-right[
+- **ggplot2** is tidyverse's data visualization package
+- The `gg` in "ggplot2" stands for Grammar of Graphics
+- It is inspired by the book **Grammar of Graphics** by Leland Wilkinson
+]
+
+---
+
+## Embedded video
+
+
+You can embed video.
+
+<iframe width="500" height="400" src="https://www.youtube.com/embed/BCMjVc9ncFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+

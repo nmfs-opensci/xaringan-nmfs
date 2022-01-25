@@ -44,6 +44,18 @@ html {
     font-size: 15px;
 }
 
+/* Font sizes */
+.larger { font-size: 400% }
+.large { font-size: 130% }
+.midi { font-size: 85% }
+.small, .small p, span.small { 
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+.xsmall { font-size: 60% }
+.tiny { font-size: 50% }
+
+
 body {
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
@@ -118,4 +130,11 @@ p {
 .hand-blue p {
     font-size: 1.1rem;
     line-height: 1.3rem;
+}
+
+.footnote, .footnote p{
+  position: absolute;
+  bottom: 0em;
+  padding-right: 4em;
+  font-size: 0.85rem;
 }

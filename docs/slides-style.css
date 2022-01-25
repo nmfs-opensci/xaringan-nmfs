@@ -45,8 +45,17 @@
 }
 
 .title-slide h3 {
+  padding-top: 2rem;
   text-align: right;
   font-family: Raleway;
+  font-weight: normal;
+  position: absolute;
+  bottom: 10%;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 10%;
+  bottom: 20%;
 }
 
 /* Alignment */
@@ -206,6 +215,7 @@ ul{
 .yellowbox h2{
   font-size: 150%;
   font-weight: bold;
+  font-style: normal;
   color: var(--stucco);
   margin-bottom: 10px;
   margin-top: 2px;
@@ -217,6 +227,7 @@ ul{
 .orangebox h2{
   font-size: 150%;
   font-weight: bold;
+  font-style: normal;
   color: var(--monument);
   margin-top: 2px;
   margin-bottom: 10px;
@@ -248,10 +259,10 @@ div.my-footer a {
 
 
 /* Footnote */
-.footnote {
+.footnote, .footnote p{
   position: absolute;
-  bottom: 0em;
+  bottom: 0.5em;
   padding-right: 4em;
-  font-size: 60%;
+  font-size: 0.70rem;
   font-family: Raleway;
 }

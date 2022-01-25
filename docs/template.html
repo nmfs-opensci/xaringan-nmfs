@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Template - Tufte style</title>
+    <title>Template</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Eli Holmes NOAA Fisheries, NWFSC Seattle, WA 2022-01-25" />
+    <meta name="author" content="Eli Holmes NOAA Fisheries, NWFSC" />
+    <meta name="date" content="2022-01-25" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
-    <link rel="stylesheet" href="slides-style.css" type="text/css" />
-    <link rel="stylesheet" href="tufte.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Template - Tufte style
-## Tufte fonts and line spacings
-### Eli Holmes<br>NOAA Fisheries, NWFSC<br>Seattle, WA<br>2022-01-25
+# Template
+## Basic style without tweaks of the css
+### Eli Holmes<br>NOAA Fisheries, NWFSC
+### 2022-01-25
 
 ---
 
@@ -30,37 +30,21 @@ layout: true
 
 # Notes
 
+The template and css makes a presentation that has a few tweaks in `slides-style.css`.  `slide-style.css` is adapted from An RStudio workshop on data science [design-ds-classroom](https://github.com/rstudio-conf-2020/design-ds-classroom) by [Mine Cetinkaya-Rundel](https://github.com/mine-cetinkaya-rundel). 
+
 * I have tweaked the title slide css in `slides-style.css` and needed to remove `date:` from the yaml.
 * `slides-style.css` has a number of extra customizations such as square for the bullets, some colored boxes, and a wide left column class.
+* Instead of page numbers, there is a progress bar across the top.
+* You may want to futz with the css for the title at the top of `slides-style.css`
+
 
 ---
 
-## Tufte style
-
-### Changes
-
-.pull-left-wide[
-1. The Tufte style is best known for sidenotes `\(^1\)` but also has a number of other features.  
-  - Tufte font
-  - Specific size ratios for text to headers
-  - Different line spacing
-1. The Tufte style is specified in the `tufte.css`
-]
-.pull-right-narrow[
-.hand-blue[
-You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it smaller and blue.
-
-`\(^1\)` In order to add a sidenote with number, you'll have to do that manually.
-]
-]
-
----
-
-## You can put anything in the side margin
+## Side margin
 
 
-.pull-left-wide[
-The side margin is not limited to text.
+.left-column[
+The side margin is smaller on the left.
 
 - Figures
 - References
@@ -68,16 +52,16 @@ The side margin is not limited to text.
 
 Everything will get scaled to fit.
 ]
-.pull-right-narrow[
+.right-column[
 .hand-blue[
 
 ```r
 plot(1:10)
 ```
 
-![](template-tufte_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+![](template_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
 
-![](static/slideswooshver.png)
+
 ]
 ]
 
@@ -89,56 +73,22 @@ Because the NMFS footnote is already occupying the footnote space, you need to a
 
 
 
-- some content
-- a [link](http://www.google.com)
-
-
-
-```r
-r &lt;- 2 + 2
-```
 
 .footnote[It is quite finicky. Add a linefeed and it breaks.&lt;br&gt;&lt;br&gt;]
 
 
-
 ---
 
-# `slides-style.css` has boxes
+# Math
 
-.bluebox[## Blue box
-- The ## header will appear at the top in grey
-- Or leave it off and add different text or header
-]
+Weirdly it doesn't know `\begin{equation}`. You have to use `$$` bracketing.
 
-.orangebox[## Orange box
-&lt;img src="template-tufte_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
-]
-
-.yellowbox[## Yellow box
-A note.
-]
-
----
-
-# Boxes and side notes
-
-.pull-left-wide[
-.orangebox[## Orange box
-&lt;img src="template-tufte_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
-]
-]
-
-.pull-right-narrow[
-.hand-blue[
-You can add sidenotes. Here I have wrapped the text in `.hand-blue` to make it smaller and blue.
-]
-
-.small[`.small` also works but the text is not itallic or blue. Note you need a linefeed in the sidenote code.
-]
-
-.small[If you leave off the line-feed, then it will use a span element and won't pick up the right line-height spacing.]]
-
+$$
+`\begin{split}
+A &amp; = \frac{\pi r^2}{2} \\
+ &amp; = \frac{1}{2} \pi r^2
+\end{split}`
+$$
 
 ---
 
@@ -163,49 +113,14 @@ class: middle
 
 ---
 
-## Three column format
-
-.three-column[
-Column 1
-
-You can have code.
+## Embedded video
 
 
-```r
-lm(mpg ~ hp, data=mtcars)
-```
+You can embed video.
 
-```
-## 
-## Call:
-## lm(formula = mpg ~ hp, data = mtcars)
-## 
-## Coefficients:
-## (Intercept)           hp  
-##    30.09886     -0.06823
-```
+&lt;iframe width="500" height="400" src="https://www.youtube.com/embed/BCMjVc9ncFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 ]
 
-.three-column[
-Column 2
-
-You can have images and embed video.
-
-![](static/slideswooshver.png)
-
-&lt;iframe width="200" height="130" src="https://www.youtube.com/embed/BCMjVc9ncFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-]
-
-.three-column[
-Column 3
-
-&amp;#127758; January 25, 2022 
-
-&amp;#127767; 09:00 - 17:00  
-
-&amp;#127881;    [rverse](http://rverse-tutorials.github.io)
-
-]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -214,7 +129,7 @@ Column 3
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
-"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc( (%current% - 1) / (%total% - 1) * 100%);\">\n  </div>\n</div>`"
+"slideNumberFormat": "Page %current%"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

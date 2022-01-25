@@ -1,9 +1,23 @@
-# presentations
-A repository for National Stock Assessment Program presentations
+# xaringan templates
 
-## FIMS
-[Priority graph](https://nmfs-general-modeling-tools.github.io/presentations/Priority.html)
+NMFS templates to use for xaringan presentations. To use, open one of the template Rmd files and save. Then edit with your material.
 
-[Slides from 20210315](https://nmfs-general-modeling-tools.github.io/presentations/slides_20210315.html)
+### `template.Rmd`. 
 
-[Slides from 20210331](https://nmfs-general-modeling-tools.github.io/presentations/slides_20210331.html)
+This is a basic presentation.
+
+* The css used is at the top
+* `slideNumberFormat:` specifies how to show the slide number
+* See the slides for examples of different slide formats
+
+### `template-tufte.Rmd`. 
+
+This is a Tufte presentation.
+
+* Uses the Tufte style fonts
+* Uses the Tufte line spacings and header styles
+* Has a progress bar at the top
+
+### Adapting.
+
+Edit the css files or add new ones. See the `theme` folder for the `xaringan_template.Rmd` that has the code that produces `xaringan-themer.css`. Use that code to create that css file.

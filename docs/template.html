@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>title</title>
+    <title>Here is a title</title>
     <meta charset="utf-8" />
-    <meta name="author" content="author" />
+    <meta name="author" content="Eli Holmes NOAA Fisheries, NWFSC Seattle, WA" />
     <meta name="date" content="2022-01-24" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/rutgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="slides-style.css" type="text/css" />
+    <link rel="stylesheet" href="tufte.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# title
+# Here is a title
 ## subtitle
-### author
+### Eli Holmes<br>NOAA Fisheries, NWFSC<br>Seattle, WA
 ### 2022-01-24
 
 ---
@@ -31,7 +33,9 @@ layout: true
 
 ---
 
-## 2016 GAISE
+## Visualising multiple variables
+
+### Base R
 
 .pull-left-wide[
 1. Teach statistical thinking.  
@@ -50,6 +54,34 @@ NOT use technology that is only applicable in the intro course or that doesn’t
 ]
 
 ---
+
+## Visualising multiple variables
+
+### Base R
+
+.pull-left-wide[
+1. Teach statistical thinking.  
+  - Teach statistics as an investigative process of problem-solving and decision making.
+  - Give students experience with multivariable thinking [...] to answer challenging questions that require them to investigate and explore relationships among many variables.
+1. Focus on conceptual understanding. 
+1. Integrate real data with a context and purpose.
+1. Foster active learning.
+1. **Use technology** to explore concepts and analyse data.
+1. Use assessments to improve and evaluate student learning.
+]
+.pull-right-narrow[
+.hand-blue[
+
+```r
+plot(1:10)
+```
+
+![](template_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+]
+]
+
+---
+
 # test
 
 
@@ -69,22 +101,34 @@ r &lt;- 2 + 2
 ]
 
 ---
-class: middle
-background-image: url("static/slideteal.png")
-background-size: cover
 
-# This is another background image you can use
-
-- To use this image as your title slide
-- replace the URL in the `background-image` argument of the first code chunk with the URL in this slide.
-
+.discussion[
+- What are other arguments for starting to teach R with the tidyverse?
+- Any arguments against it?
+]
 
 ---
-# Thanks!
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) and [**xaringanthemer**](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html).
+class: middle
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+# How tidyverse?
+
+---
+
+### .pink[  ]
+
+## ggplot2 `\(\in\)` tidyverse
+
+.pull-left[
+- **ggplot2** is tidyverse's data visualization package
+- The `gg` in "ggplot2" stands for Grammar of Graphics
+- It is inspired by the book **Grammar of Graphics** by Leland Wilkinson
+]
+.pull-right[
+- **ggplot2** is tidyverse's data visualization package
+- The `gg` in "ggplot2" stands for Grammar of Graphics
+- It is inspired by the book **Grammar of Graphics** by Leland Wilkinson
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -93,7 +137,7 @@ The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yih
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
-"slideNumberFormat": "Page %current%"
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc( (%current% - 1) / (%total% - 1) * 100%);\">\n  </div>\n</div>`"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

@@ -19,9 +19,9 @@ output:
         </div>`
 ---
 
-layout: true
-  
+<!-- This part specs the layout for the slideshow and the footnote that appears on all slides -->
 
+layout: true
 
 .footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
 

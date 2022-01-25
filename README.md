@@ -4,7 +4,7 @@ NMFS templates to use for xaringan presentations. To use, open one of the templa
 
 ### `template.Rmd`. 
 
-This is a basic presentation. [Slides](rverse-tutorials.github.io/xaringan-nmfs/template.html)
+This is a basic presentation. [Slides](xaringan-nmfs/docs/template.html)
 
 * The css used is at the top
 * `slideNumberFormat:` specifies how to show the slide number
@@ -12,7 +12,7 @@ This is a basic presentation. [Slides](rverse-tutorials.github.io/xaringan-nmfs/
 
 ### `template-tufte.Rmd`. 
 
-This is a Tufte presentation. [Slides](rverse-tutorials.github.io/xaringan-nmfs/template-tufte.html)
+This is a Tufte presentation. [Slides](xaringan-nmfs/docs/template-tufte.html)
 
 * Uses the Tufte style fonts
 * Uses the Tufte line spacings and header styles

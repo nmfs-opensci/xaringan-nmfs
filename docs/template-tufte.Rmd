@@ -18,9 +18,6 @@ output:
           </div>
         </div>`
 ---
-
-<!-- This part specs the layout for the slideshow and the footnote that appears on all slides -->
-
 layout: true
 
 .footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
@@ -97,9 +94,20 @@ r <- 2 + 2
 
 ---
 
-.discussion[
-- What are other arguments for starting to teach R with the tidyverse?
-- Any arguments against it?
+.bluebox[## Blue box
+- The ## header will appear at the top in grey
+- Or leave it off and add different text or header
+]
+
+.orangebox[## Orange box
+```{r fig.height=2, echo=FALSE, fig.align='center'}
+plot(1:100)
+```
+]
+
+
+.yellowbox[## Yellow box
+A note.
 ]
 
 ---

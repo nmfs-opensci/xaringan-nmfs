@@ -1,1 +1,7 @@
+title: xaringan NMFS
+description: Some templates for NMFS presentations with xaringan
+logo: docs/static/xaringan-template.png
+show_downloads: true
 theme: jekyll-theme-minimal
+plugins:
+  - jemoji

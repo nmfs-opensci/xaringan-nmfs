@@ -19,7 +19,6 @@ layout: true
 
 .footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
 
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```

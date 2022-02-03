@@ -10,9 +10,9 @@ To host on GitHub, go to settings in your GH repo and turn on GitHub Pages (scro
 
 **packages:** {xaringan}, {xaringanthemes}, [{xaringanExtra}](devtools::install_github("gadenbuie/xaringanExtra"))
 
-### `template.Rmd`. 
+### [`template.Rmd`](docs/template.Rmd)
 
-This is a basic presentation. [Slides](docs/template.html)
+This is a basic presentation. [Slides](http://htmlpreview.github.io/?https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template.html)
 
 * The css used is at the top
 * `slideNumberFormat:` specifies how to show the slide number

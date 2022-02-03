@@ -36,10 +36,11 @@ This is a Tufte presentation. [Slides](https://nmfs-openscapes.github.io/xaringa
 * Uses the Tufte line spacings and header styles
 * Has a progress bar at the top
 
-### Adapting.
+### Adapting
 
-Edit the css files or add new ones. See the `theme` folder for the `xaringan_template.Rmd` that has the code that produces `xaringan-themer.css`. Use that code to create that css file.
+The files you need are in the `docs` folder. You need the `static` folder which has the background images. Then you need all the css files not in folders; probably cleaner to move those to a `css` folder... Lastly you need an Rmd template.
 
+Once you have those things, you can edit the Rmd files for your presentation. To change the look, edit the css files or add new ones. See the `theme` folder for the `xaringan_template.Rmd` that has the code that produces `xaringan-themer.css`. Use that code to create the base css file which specs things like font and color. The `assets` and `libs` folders will be created by {xaringan} when you knit your presentation.
 
 <hr>
 

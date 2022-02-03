@@ -42,6 +42,14 @@ The files you need are in the `docs` folder. You need the `static` folder which 
 
 Once you have those things, you can edit the Rmd files for your presentation. To change the look, edit the css files or add new ones. See the `theme` folder for the `xaringan_template.Rmd` that has the code that produces `xaringan-themer.css`. Use that code to create the base css file which specs things like font and color. The `assets` and `libs` folders will be created by {xaringan} when you knit your presentation.
 
+## Sharing your presentation
+
+You need to enable GitHub Pages on your repo. Once you do that, the format of the URL you'll share will look something like
+```
+https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template-tufte.html
+```
+except of course the part in front of `github.io` will be your username and the `xaringan-nmfs` will be replaced with your repo name.
+
 <hr>
 
 This repo and the NMFS xargingan theme was adapted from [nmfs-fish-tools/presentations](https://github.com/nmfs-fish-tools/presentations) made by [Christine Stawitz](https://github.com/ChristineStawitz-NOAA). The Tufte fonts and css are from [tufte-css](https://github.com/edwardtufte/tufte-css). `slide-style.css` is adapted from An RStudio workshop on data science [design-ds-classroom](https://github.com/rstudio-conf-2020/design-ds-classroom) by [Mine Cetinkaya-Rundel](https://github.com/mine-cetinkaya-rundel). Slides created via the R package [{xaringan}](https://github.com/yihui/xaringan) and [{xaringanthemer}](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html).

@@ -12,15 +12,15 @@ To host on GitHub, go to settings in your GH repo and turn on GitHub Pages (scro
 
 ### [`template.Rmd`](docs/template.Rmd)
 
-This is a basic presentation. [Slides](http://htmlpreview.github.io/?https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template.html)
+This is a basic presentation. [Slides](https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template.html)
 
 * The css used is at the top
 * `slideNumberFormat:` specifies how to show the slide number
 * See the slides for examples of different slide formats
 
-### `template-extra.Rmd`. 
+### [`template-extra.Rmd`](docs/template-extra.Rmd)
 
-This has a variety of extra bells and whistles. [Slides](docs/template-extra.html)
+This has a variety of extra bells and whistles. [Slides](https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template-extra.html)
 
 * A progress bar at top
 * A right side bar
@@ -28,9 +28,9 @@ This has a variety of extra bells and whistles. [Slides](docs/template-extra.htm
 * Boxes with text
 * 3 and 4 column formats
 
-### `template-tufte.Rmd`. 
+### [`template-tufte.Rmd`](docs/template-tufte.Rmd)
 
-This is a Tufte presentation. [Slides](docs/template-tufte.html)
+This is a Tufte presentation. [Slides](https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template-tufte.html)
 
 * Uses the Tufte style fonts
 * Uses the Tufte line spacings and header styles

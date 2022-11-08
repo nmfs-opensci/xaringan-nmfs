@@ -12,7 +12,7 @@ To host on GitHub, go to settings in your GH repo and turn on GitHub Pages (scro
 
 ### [`template.Rmd`](docs/template.Rmd)
 
-This is a basic presentation. [Slides](https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template.html)
+This is a basic presentation. [Slides](https://nmfs-opensci.github.io/xaringan-nmfs/docs/template.html)
 
 * The css used is at the top
 * `slideNumberFormat:` specifies how to show the slide number
@@ -20,7 +20,7 @@ This is a basic presentation. [Slides](https://nmfs-openscapes.github.io/xaringa
 
 ### [`template-extra.Rmd`](docs/template-extra.Rmd)
 
-This has a variety of extra bells and whistles. [Slides](https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template-extra.html)
+This has a variety of extra bells and whistles. [Slides](https://nmfs-opensci.github.io/xaringan-nmfs/docs/template-extra.html)
 
 * A progress bar at top
 * A right side bar
@@ -30,7 +30,7 @@ This has a variety of extra bells and whistles. [Slides](https://nmfs-openscapes
 
 ### [`template-tufte.Rmd`](docs/template-tufte.Rmd)
 
-This is a Tufte presentation. [Slides](https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template-tufte.html)
+This is a Tufte presentation. [Slides](https://nmfs-opensci.github.io/xaringan-nmfs/docs/template-tufte.html)
 
 * Uses the Tufte style fonts
 * Uses the Tufte line spacings and header styles
@@ -46,7 +46,7 @@ Once you have those things, you can edit the Rmd files for your presentation. To
 
 You need to enable GitHub Pages on your repo. Once you do that, the format of the URL you'll share will look something like
 ```
-https://nmfs-openscapes.github.io/xaringan-nmfs/docs/template-tufte.html
+https://nmfs-opensci.github.io/xaringan-nmfs/docs/template-tufte.html
 ```
 except of course the part in front of `github.io` will be your username and the `xaringan-nmfs` will be replaced with your repo name.
 
